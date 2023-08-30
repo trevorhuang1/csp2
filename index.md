@@ -17,7 +17,8 @@ title: Trevor's CSP Blog!
 <a href="https://chat.openai.com/">ChatGPT</a>
 
 ## Plans for Week 3:
-1. Follow along in class and fix
+1. Follow along in class and clone the student repository again
+2. Create a project (calculator) and get it to work
 
 ## Day 2 of Blogging, 8/22
 My partner helped me post my freeform photo onto the website and adjust its size. I also linked some websites I always use for this class. I accidently made a lot of changes in index.html without knowing that it automatic overwrites. Luckily, I had enough time to redo my changes in index.md.
