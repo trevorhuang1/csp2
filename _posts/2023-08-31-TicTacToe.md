@@ -83,3 +83,10 @@ courses: { compsci: {week: 2} }
           if (board[row][col] === '') {
             return false;
           }
+        }
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>
