@@ -29,11 +29,7 @@ HTML implementation of the calculator.
 ---
 ---
 
-@import "{{ site.theme }}";
-
-// STYLING PREFERNCES for SITE
-// mixin used as a template for buttons
-  @mixin button {
+  button {
     width: auto;
     height: auto;
     border-radius: 10px;
@@ -48,13 +44,13 @@ HTML implementation of the calculator.
     grid-column: span 1;
     grid-row: span 1;
 
-    // Creates smooth animation effect
     transition: all 0.5s; 
   }
 
   /* define class for redifined button */
   .button {
     @include button;
+    background-color: #000000
   }
 
    /* darkens the background color on hover to create a selecting effect */
@@ -96,11 +92,13 @@ HTML implementation of the calculator.
   /* styling for the calculator number button */
   .calculator-number {
     @extend .button;
+    background-color: #21807c;
   }
 
   /* styling for the calculator operation button */
   .calculator-operation {
     @extend .button;
+    background-color: #00FF00;
   }
   
   /* styling for the calculator clear button */
@@ -307,5 +305,3 @@ vantaInstance({
   gyroControls: false
 });
 </script>
-
-
