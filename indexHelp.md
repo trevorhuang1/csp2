@@ -1,7 +1,7 @@
 ---
 layout: help
 permalink: /help
-title: Blogs
+title: Helpful websites
 ---
 
 ## Useful Links
