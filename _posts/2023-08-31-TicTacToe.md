@@ -1,6 +1,6 @@
 ---
 toc: true
-comments: false
+comments: true
 layout: post
 title: Tic Tac Toe
 description: A simple game of tic tac toe where players alternate taking turns. It is played on a 3x3 board and the first to get three in a row wins either horizontally, vertically, or diagnally wins. If all spots are taken up without three in a row, then it is a draw.
