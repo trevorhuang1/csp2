@@ -89,13 +89,14 @@ courses: { compsci: {week: 2} }
     }
   </script>
 
-  <script src="https://utteranc.es/client.js"
-        repo="https://trevorhuang1.github.io/csp2/blogs"
+  
+</body>
+</html>
+
+<script src="https://utteranc.es/client.js"
+        repo="csp2"
         issue-term="pathname"
         theme="github-light"
         crossorigin="anonymous"
         async>
   </script>
-
-</body>
-</html>

@@ -133,14 +133,6 @@ HTML implementation of the calculator.
   }
 </style>
 
-<script src="https://utteranc.es/client.js"
-        repo="https://trevorhuang1.github.io/csp2/blogs"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-
 <link rel="stylesheet" type="text/css" href="/home/trevor/vscode/csp2/_site/assets/css/style.css">
 
 
@@ -312,4 +304,12 @@ vantaInstance({
   touchControls: true,
   gyroControls: false
 });
+</script>
+
+<script src="https://utteranc.es/client.js"
+        repo="csp2"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>
