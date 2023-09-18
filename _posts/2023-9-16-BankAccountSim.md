@@ -15,39 +15,7 @@ Errors I encountered:
  -->
 
 <html>
-
-<head>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
-    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>var define = null;</script>
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-</head>
-
 <body>
-
-<table id="demo" class="table">
-  <thead>
-    <tr>
-      <th>Item</th>
-      <th>Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Burger</th>
-      <th>$4.00</th>
-    </tr>
-    <tr>
-      <th>Fries</th>
-      <th>$2.00</th>
-    </tr>
-    <tr>
-      <th>Drink</th>
-      <th>$1.00</th>
-    </tr>
-  </tbody>
-</table>
-<script>$("#demo").DataTable();</script>
 
 <p>Please deposit an amount between 1-1000 dollars</p>
 
@@ -55,6 +23,12 @@ Errors I encountered:
 <input id="demo" type="text">
 <button type="button" onclick="deposit()">Deposit</button>
 <p id="message"></p>
+
+<!-- Withdrawal button -->
+<p>Please withdrawal an amount less than what you have in your bank account<p>
+<input id="demo1" type="text">
+<button type="button" onclick="withdrawal()">Withdrawal</button>
+<p id="message1"></p>
 <!-- Displays the total amount of dollars in bank account -->
 <p>Total: <span id="total">0</span> dollars</p>
 
@@ -91,7 +65,26 @@ function deposit() {
 }
 
 function withdrawal() {
+    //Sets error display to empty
+  const message = document.getElementById("message1");
+  message.innerHTML = "";
+  let y = document.getElementById("demo1").value;
+  //Checks if the input is valid
+  try { 
+    if(y.trim() == "")  throw "empty";
+    if(isNaN(y)) throw "not a number";
+    y = Number(y);
+    if(y > totalAmount)  throw "too much";
+    if(y < 1)   throw "too little";
 
+    //Updates if input is valid
+    totalAmount -= y;
+    document.getElementById("total").textContent = totalAmount;
+  }
+  //If input is not valid, display the error
+  catch(err) {
+    message.innerHTML = "Withdrawal is " + err;
+  }
 }
 </script>
 
