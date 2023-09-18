@@ -11,11 +11,8 @@ courses: { compsci: {week: 4} }
 <!-- 
 Errors I encountered:
 1. I was using a finally statement after the try catch statement to add to the total amount, without realizing that 'finally' made it so that any input would be added even if it was invalid
-2. On line 48, I wrote 'document.getElementbyId' instead of 'document.getElementById' (capitalization error). Funnily enough, the catch statement actually displayed the error ('document.getElementbyId is not a function')and helped me fix it!
+2. On line 59, I wrote 'document.getElementbyId' instead of 'document.getElementById' (capitalization error). Funnily enough, the catch statement actually displayed the error ('document.getElementbyId is not a function')and helped me fix it!
  -->
-
-<html>
-<body>
 
 <p>Please deposit an amount between 1-1000 dollars</p>
 
@@ -33,11 +30,6 @@ Errors I encountered:
 <p>Total: <span id="total">0</span> dollars</p>
 
 <script>
-var menu = {
-  burger: 4.00,
-  fries: 2.00,
-  drink: 1.00
-}
 //Sets amount in bank account to 0
 var totalAmount = 0;
 
@@ -87,6 +79,3 @@ function withdrawal() {
   }
 }
 </script>
-
-</body>
-</html>
