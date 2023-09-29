@@ -1,7 +1,7 @@
 ---
-title: Basics of Javascript
-hide: True
-description: A Tech Talk on how to use javascript
+title: Web Basics Review Ticket
+comments: true
+description: A review of the web basics hacks
 type: tangibles
 permalink: /basics/javascript
 ---
@@ -31,3 +31,5 @@ permalink: /basics/javascript
 ## Correcting Errors
 - I decided to just follow the instructions and change the code as needed
 - The only issue I faced was that when I was trying to use a for loop, I wasn't setting i = 0 so that was causing an error in the code. Thankfully, the error message helped me identify and fix the error
+
+## Peer Review
