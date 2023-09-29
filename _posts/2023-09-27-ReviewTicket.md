@@ -2,8 +2,8 @@
 title: Web Basics Review Ticket
 comments: true
 description: A review of the web basics hacks
-type: tangibles
-permalink: /basics/javascript
+type: post
+courses: { compsci: {week: 6} }
 ---
 
 # Review Of Programming Basics
