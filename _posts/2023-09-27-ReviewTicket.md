@@ -33,3 +33,4 @@ courses: { compsci: {week: 6} }
 - The only issue I faced was that when I was trying to use a for loop, I wasn't setting i = 0 so that was causing an error in the code. Thankfully, the error message helped me identify and fix the error
 
 ## Peer Review
+
